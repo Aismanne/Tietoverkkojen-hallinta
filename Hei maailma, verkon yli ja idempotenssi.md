@@ -35,4 +35,12 @@ Seuraavaksi tarvitaan hellomaailma.txt, jota ohjelma yrittää siirtää orjalle
 
 Tekstitiedoston tallentamisen jälkeen voidaan Saltilla ajaa luomamme hellomaailma.sls ohjelma. Ohjelma voidaan ajaa komennolla ``sudo salt '*' state.apply hellomaailma``. Komennossa ``'*'`` merkitsee orjia, joille komento ajetaan. Tässä tapauksessa ajetaan komento kaikille orjille, mutta kohtaan voidaan myös kirjoittaa orjien ID:t, joille komento halutaan menevän. ``state.apply hello`` merkitsee mikä tila ajetaan. 
 
-Tilan ajamisen jälkeen Salt ilmoittaa onnistuiko tilan ajaminen, kuinka monta muutosta tehtiin ja epäonnistuiko jokin muutos. Hellomaailma tilaa ajettaessa tulisi onnnistua 1 ja muutoksia tulisi olla 1. Epäonnistumisia tulisi olla 0. Jos tila ajetaan uudelleen tulisi tuloksena olle onnistuneina 1, mutta muutoksia ei pitäisi olla. Voimme tarkistaa tallensiko tila haluamaamme kansionn hellomaailma.txt tiedoston siirtymällä /tmp kansioon komennolla ``cd /tmp``. Tämän jälkeen voimme katsoa kansion sisältöä ``ls`` komennolla ja tarkistaa hellomaailma.txt tiedoston sisällön ``cat hellomaailma.txt`` komennolla. Sisällön tulisi olla Hei maailma!. Jos tiedoston sisältö muuttuu ja hellomaailma tila ajetaan uudelleen palauuttaa Salt tiedoston sisällön takaisin määriteltyyn muotoon.  
+Tilan ajamisen jälkeen Salt ilmoittaa onnistuiko tilan ajaminen, kuinka monta muutosta tehtiin ja epäonnistuiko jokin muutos. Hellomaailma tilaa ajettaessa tulisi onnnistua 1 ja muutoksia tulisi olla 1. Epäonnistumisia tulisi olla 0. Jos tila ajetaan uudelleen tulisi tuloksena olle onnistuneina 1, mutta muutoksia ei pitäisi olla. Voimme tarkistaa tallensiko tila haluamaamme kansionn hellomaailma.txt tiedoston siirtymällä /tmp kansioon komennolla ``cd /tmp``. Tämän jälkeen voimme katsoa kansion sisältöä ``ls`` komennolla ja tarkistaa hellomaailma.txt tiedoston sisällön ``cat hellomaailma.txt`` komennolla. Sisällön tulisi olla Hei maailma!. Jos tiedoston sisältö muuttuu ja hellomaailma tila ajetaan uudelleen palauuttaa Salt tiedoston sisällön takaisin määriteltyyn muotoon.
+
+<h2> Tehtävä D </h2>
+
+Tehtävässä oli tarkoituksena käyttää ``sudo salt '*' grains.items`` komentoa. Komento antaa orja koneelta tietoja. Tiedot sisältävät tietoa koneen laitteistoista esim. Prosessorin malli ja valmistaja, prosessorin arkkitehtuurin, IPv4 ja IPv6 osoitteet, käyttöjärjestelmän tiedot ja paljon muuta. Ohjelma myös huomaa että käyttöjärjestelmä ja kone pyörivät VirtualBoxin sisällä. Tämä on mielestäni hyödyllinen komento, jos orjakoneesta tarvitaan tietoja. ``grains`` komentoa voidaan myös käyttää muilla arvoilla, kuin ``.items``. Muita mahdollisia komentoja on ``grains.ls``, ``grains.set`` yms. 
+
+<h2> Tehtävä E </h2>
+
+
