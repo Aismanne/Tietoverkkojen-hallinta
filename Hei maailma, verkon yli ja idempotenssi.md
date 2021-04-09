@@ -17,6 +17,9 @@ Seuraavaksi meidän tulee hyväksyä herra koneella orjien avaimet, jotta voimme
 
 Nyt voimme testata toimiiko yhteys orjaan komennolla ``sudo salt '*' cmd.run 'whoami'``. Vastauksen tulisi palauttaa minion: root. Jos vastauksena tuli tämä on yhteys toiminnassa.
 
-<h2> Tehtävä B </h2s>
+<h2> Tehtävä B </h2>
 
-0
+
+Tehtävässä oli tarkoitus luoda tiedosto, joka luo orjalle Hei maailma tiedoston, jota muokataan vain, jos siihen on tehty muutoksia
+
+sda
