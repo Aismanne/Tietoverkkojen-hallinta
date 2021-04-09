@@ -19,7 +19,20 @@ Nyt voimme testata toimiiko yhteys orjaan komennolla ``sudo salt '*' cmd.run 'wh
 
 <h2> Tehtävä B </h2>
 
-
 Tehtävässä oli tarkoitus luoda tiedosto, joka luo orjalle Hei maailma tiedoston, jota muokataan vain, jos siihen on tehty muutoksia
 
-sda
+Aluksi luodaan kansio, josta herra lukee tarvittavat tiedostot orjan ohjaamiseksi. Tämä kansio luodaan komennolla ``sudo mkdir -p /srv/salt/``. Komennolla ``cd /srv/salt`` voimme siirtyä juuri luomaamme kansioon ja komennolla ``ls`` voimme listata kansion sisällön, joka tulisi olla vielä tyhjä. Komennolla ``sudoedit hellomaailma.sls`` voimme luoda sls tiedoston, jota Salt lukee ja johon voimme kirjoittaa komentoja Saltille. 
+
+Tiedoston sisälle tulee kirjoittaa kommenot, joilla saamme Saltin lisäämään tekstitiedoston orjalle. Saltissa komennot kirjoitetaan YAML:lla. Siinä tärkää on muistaa, että sisennykset ovat aina kahden välilyönnin verran. Jos välilyöntejä on väärä määrä voi ohjelma mennä vikatilaan. 
+
+Alla olevalla koodilla saamme Saltin lisäämään herralla olevan hellomaailma.txt tiedoston orjalle /tmp kansioon. Ohjelma hakee hellomaailma.txt tiedostoa /srv/salt/ kansiosta.
+
+``/tmp/hellomaailma.txt:
+    file.managed:
+      - source: salt://hellomaailma.txt``
+
+Seuraavaksi tarvitaan hellomaailma.txt, jota ohjelma yrittää siirtää orjalle. Se luodaan komennolla ``sudoedit hellomaailma.txt``. Tätä komentoa voidaan käyttää, jos tällä hetkellä olemme /srv/salt kansiossa sisällä. Jos olemme muussa kansiossa tulee komentoa muuttaa muotoon ``suodedit /srv/salt/hellomaailma.txt``. Tässä tapauksessa tekstitiedosto luodaan määrittelemäämme polkuun eikä sinne kansioon, jossa olemme tällä hetkellä. Hellomaailma.txt tiedoston sisälle voimme kirjoittaa teksiä esim. Hei maailma!. 
+
+Tekstitiedoston tallentamisen jälkeen voidaan Saltilla ajaa luomamme hellomaailma.sls ohjelma. Ohjelma voidaan ajaa komennolla ``sudo salt '*' state.apply hellomaailma``. Komennossa ``'*'`` merkitsee orjia, joille komento ajetaan. Tässä tapauksessa ajetaan komento kaikille orjille, mutta kohtaan voidaan myös kirjoittaa orjien ID:t, joille komento halutaan menevän. ``state.apply hello`` merkitsee mikä tila ajetaan. 
+
+Tilan ajamisen jälkeen Salt ilmoittaa onnistuiko tilan ajaminen, kuinka monta muutosta tehtiin ja epäonnistuiko jokin muutos. Hellomaailma tilaa ajettaessa tulisi onnnistua 1 ja muutoksia tulisi olla 1. Epäonnistumisia tulisi olla 0. Jos tila ajetaan uudelleen tulisi tuloksena olle onnistuneina 1, mutta muutoksia ei pitäisi olla. Voimme tarkistaa tallensiko tila haluamaamme kansionn hellomaailma.txt tiedoston siirtymällä /tmp kansioon komennolla ``cd /tmp``. Tämän jälkeen voimme katsoa kansion sisältöä ``ls`` komennolla ja tarkistaa hellomaailma.txt tiedoston sisällön ``cat hellomaailma.txt`` komennolla. Sisällön tulisi olla Hei maailma!. Jos tiedoston sisältö muuttuu ja hellomaailma tila ajetaan uudelleen palauuttaa Salt tiedoston sisällön takaisin määriteltyyn muotoon. 
