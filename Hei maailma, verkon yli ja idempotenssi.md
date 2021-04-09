@@ -2,7 +2,7 @@
 
 <h2> Tehtävä A </h2>
 
-<p> Tehtävässä tavoitteena oli asentaa Salt ja sille yksi orja. Valitsin alustakseni Oraclen VirtualBoxin ja sille asennetun Debian käyttöjärjestelmän. </p>
+Tehtävässä tavoitteena oli asentaa Salt ja sille yksi orja. Valitsin alustakseni Oraclen VirtualBoxin ja sille asennetun Debian käyttöjärjestelmän.
 
 Saltin asentamiseksi on ensimmäisenä avattava käyttöjärjestelmän terminaali. Sieltä voimme asentaa tarvittavan Salt ohjelman ja myös antaa sille tarvittavia komentoja. Salt master ohjelman asentamiseksi tulee terminaaliin antaa komennot ``sudo apt-get install salt-master``. Tämä asentaa Salt herra ohjelman, jolla orjia ohjataan. Tämän jälkeen asennetaan orja ohjelma toiselle koneelle, joka tässä tapauksessa on sama virtuaalikone. Orjalle ohjelma saadaan käyttämällä terminaalissa komentoa ``sudo apt-get install salt-minion``
 
