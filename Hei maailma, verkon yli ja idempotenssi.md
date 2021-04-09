@@ -43,4 +43,11 @@ Tehtävässä oli tarkoituksena käyttää ``sudo salt '*' grains.items`` koment
 
 <h2> Tehtävä E </h2>
 
+Tehtävässä oli tarkoituksena kokeilla jonkin toisen tilan käyttämistä Saltissa. Kokeilin pkg.installed tilaa. 
 
+Aluksi luodaan uudelle tilalle oma kansio /srv/salt polkuun. Kansio luodaan käyttämällä ``sudo mkdir -p curl`` komentoa käyttämällä. Komennolla kansion nimeksi tulee curl. Kansion sisää luodaan tilalle ohjelma. Aluksi siirrytään kansioon komennolla ``cd curl``. Seuraavaksi luodaan tila komennolla ``sudoedit init.sls``. Tilaan luodaan komennot, joilla haluttu paketti asennetaan. 
+
+``curl:
+    pkg.installed``
+    
+Tämän jälkeen voidaan tila ajaa komennolla ``sudo salt '*' state.appy curl`` Komennon pitäisi asentaa orjalle Curl ohjelma. Orjalla voidaan testata asentuiko kyseinen ohjelma käyttämällä ``curl --version`` komentoa, joka kertoo asennetun Curl ohjelman version. Jos vastauksena tulee ohjelmaversio on Curl asentunut oikein orjalle. 
