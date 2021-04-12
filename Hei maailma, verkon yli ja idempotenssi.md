@@ -51,3 +51,13 @@ Aluksi luodaan uudelle tilalle oma kansio /srv/salt polkuun. Kansio luodaan käy
     pkg.installed``
     
 Tämän jälkeen voidaan tila ajaa komennolla ``sudo salt '*' state.appy curl`` Komennon pitäisi asentaa orjalle Curl ohjelma. Orjalla voidaan testata asentuiko kyseinen ohjelma käyttämällä ``curl --version`` komentoa, joka kertoo asennetun Curl ohjelman version. Jos vastauksena tulee ohjelmaversio on Curl asentunut oikein orjalle. 
+
+<h2> Lähteet </h2>
+
+https://terokarvinen.com/
+
+http://terokarvinen.com/2018/salt-quickstart-salt-stack-master-and-slave-on-ubuntu-linux/index.html?fromSearch=
+
+https://terokarvinen.com/2018/salt-states-i-want-my-computers-like-this/
+
+Saltin manuaali ``salt man``
