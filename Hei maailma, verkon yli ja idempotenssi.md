@@ -60,4 +60,4 @@ http://terokarvinen.com/2018/salt-quickstart-salt-stack-master-and-slave-on-ubun
 
 https://terokarvinen.com/2018/salt-states-i-want-my-computers-like-this/
 
-Saltin manuaali ``salt man``
+Saltin manuaali ``man salt``
