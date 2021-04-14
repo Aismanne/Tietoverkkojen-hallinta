@@ -14,4 +14,6 @@ Nyt Apache on asennettuna ja porttiasetuksia on muutettu haluamalla tavalla. Seu
 
 Seuraavaksi automatisoidaan asennus Saltilla. Komennolla ``cd /srv/salt`` siirrytään Saltin kansioon ja sinne luodaan komennolla ``sudo mkdir apache`` apache kansio, josta Salt tila ajetaan. Siirretään /srv/salt kansiossa oleva ports.conf tiedosto, joka kopioitiin aikaisemmin Apachen asetustiedostoista nyt luotuun apache kansioon komennolla ``sudo mv ports.conf apache``. Tämän jälkeen luodaan Saltille tila, jonka se ajaa. Aluksi siirrytään luotuun apache kansioon ``cd apache`` komennolla. Tämän jälkeen luodaan tila komennolla ``sudoedit init.sls``.
 
-Init.sls sisään kirjoitetaan tilan komennot.
+Init.sls sisään kirjoitetaan tilan komennot. Kaikkia komentoja testataan omassa pienessä osassa, jotta voidaan helposti todentaa tilan toimivuus. Testasin kaikki tilan komennot erikseen ennen niiden lyömistä yhteen. 
+
+``
