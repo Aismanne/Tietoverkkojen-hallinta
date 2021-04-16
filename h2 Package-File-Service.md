@@ -17,3 +17,10 @@ Seuraavaksi automatisoidaan asennus Saltilla. Komennolla ``cd /srv/salt`` siirry
 Init.sls sisään kirjoitetaan tilan komennot. Kaikkia komentoja testataan omassa pienessä osassa, jotta voidaan helposti todentaa tilan toimivuus. Testasin kaikki tilan komennot erikseen ennen niiden lyömistä yhteen. 
 
 ``
+apache2:
+  pkg.installed
+ /etc/apache2/ports.conf:
+  file.managed:
+    - source: salt://apache/ports.conf
+``
+dads
