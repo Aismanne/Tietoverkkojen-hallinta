@@ -38,9 +38,9 @@ Tehtävässä B oli tavoitteena asentaa joku täysin uusi ohjelma, jota ei ole k
 
 Tehtävässä C tarkoituksena oli ajaa jokin tila paikallisesti, ilman master-slave arkkitehtuuria. Ajoin komennolla **``sudo salt-call --local state.apply hello``**. hello tilan, jonka tulisi luoda /tmp kansioon hellomaailma.txt tiedoston. Tila toimi aivan normaalisit, sillä olen käyttänyt yhtä virtuaalikonetta herrana ja orjana, joten tiedostopoluissa ei ole ongelmia. Kokeilin myös ajaa tilat komennoilla **``sudo salt-call --local state.apply ssh``** ja **``sudo salt-call --local state.apply curl``**. Molemmat tilat toimivat normaalisti. Missään ajamassani tilassa ei ole tiedostopolkuja, joita ei ole olemassa, joten kaikki toimivat normaalisti. Jos tilojen koodi olisi tehty koneille, joilla olisi toinen käyttäjänimi, tai tiedostot olisivat tietyn nimisissä kansioissa, joita ei paikallisella koneella ole, tilat eivät toimisi.
 
-En saanut -debug komentoa lisättyä **``sudo salt-call --local state.apply``** komentojen perään. Etsin ratkaisua jonkin aikaa eri materiaaleista, mutta en saanut sitä toimimaan. Asiaan pitää perehtyä lisää, tai kysyä opettajalta. (Alhaalla kuva paikallisesti ajetusta tilasta.)!
+En saanut -debug komentoa lisättyä **``sudo salt-call --local state.apply``** komentojen perään. Etsin ratkaisua jonkin aikaa eri materiaaleista, mutta en saanut sitä toimimaan. Asiaan pitää perehtyä lisää, tai kysyä opettajalta. (Alhaalla kuva paikallisesti ajetusta tilasta.)
 
-[Screenshot_131](https://user-images.githubusercontent.com/82207948/115072981-92676c80-9f00-11eb-820e-0b9020e64629.png)
+![Screenshot_131](https://user-images.githubusercontent.com/82207948/115072981-92676c80-9f00-11eb-820e-0b9020e64629.png)
 
 
 <h2> Lähteet </h2>
