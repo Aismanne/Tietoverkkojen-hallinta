@@ -44,7 +44,10 @@ Komennolla **``lynx wikipedia.org``** voimme testata myös asentuiko Lynx ja onk
 <h2> Lähteet </h2>
 
 https://git-scm.com/docs
+
 https://www.atlassian.com/git/tutorials
+
 https://pc-freak.net/blog/how-to-permanently-enable-cookies-in-lynx-text-browser-disable-accept-cookies-prompt-in-lynx-console-browser/
+
 http://terokarvinen.com/2018/pkg-file-service-control-daemons-with-salt-change-ssh-server-port/ (Käytin muistutinvirkistyksenä ja apuna tilan luomisessa)
 
