@@ -55,5 +55,8 @@ Kolmanneksi projektiksi valitsin Aatu Alasen moduulin, joka asentaa Teamspeak 3 
 https://github.com/Suoladgl/Moduuli
 
 
+<h1> Lähteet </h1>
 
+https://itsfoss.com/check-graphics-card-linux/
 
+https://ryanstutorials.net/bash-scripting-tutorial/bash-script.php
