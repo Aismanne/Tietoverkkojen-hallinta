@@ -43,3 +43,11 @@ Tehtävässä C oli tarkoituksena käyttää komentoa **``cd /etc/; sudo find -p
 Komennossa **``cd /usr/local/bin; sudo find -printf '%T+ %p\n'|sort|tail``** **-printf** tulostaa tuloksen terminaaliin, **%T+** kertoo komennolle miltä ajalta muutosta etsitään, **%p** antaa muutetun tiedoston nimen, \n laittaa listan kohdat uusille riveille, sort lajittelee rivit ja tail antaa vain 10 viimeisintä tulosta. 
 
 Viimeiseen kohtaan en keksinyt komentoa, joka olisi muuttanut yhteisiä asetustiedostoja. Koetin poistaa muutamia eri ohjelmia, mutta en saanut **/etc** polussa näkymäään muutoksia. 
+
+
+
+<h1> Lähteet </h1>
+
+https://linuxize.com/post/how-to-install-visual-studio-code-on-debian-10/
+
+https://docs.microsoft.com/en-us/windows-server/administration/linux-package-repository-for-microsoft-software
