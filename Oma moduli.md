@@ -2,7 +2,17 @@
 
 <h2> Tehtävä A </h2>
 
-tulossa
+Tehtävä h1: https://github.com/Aismanne/Tietoverkkojen-hallinta/blob/1main/Hei%20maailma%2C%20verkon%20yli%20ja%20idempotenssi.md
+
+Tehtävä h2: https://github.com/Aismanne/Tietoverkkojen-hallinta/blob/1main/Package%20File%20Service.md
+
+Tehtävä h3: https://github.com/Aismanne/Tietoverkkojen-hallinta/blob/1main/Versionhallinta.md
+
+Tehtävä h4: https://github.com/Aismanne/Tietoverkkojen-hallinta/blob/1main/Uusi%20komento.md
+
+Tehtävä h5: https://github.com/Aismanne/Tietoverkkojen-hallinta/blob/1main/Aikajana.md
+
+Tehtävä h6: ~Tulossa~
 
 <h2> Tehtävä B </h2>
 
