@@ -16,7 +16,7 @@ Tehtävä h6: **Tulossa**
 
 <h2> Tehtävä B </h2>
 
-Tehätävässä tavoitteena oli luoda jokin oma moduuli, jolla olisi jokin oikean maailman käyttötarkoitus. Idean keksiminen oli mielestäni melko hankalaa, sillä kaikki ideat tuntuivat liian simppeleiltä tai typeriltä. Päädyin lopulta luomaan moduulin, jota voidaan käyttää uuden Debian asennuksen käyttöönotossa. Päädyin tähän, sillä olin juuri ottanut käyttöön Debian pohjaisen koneen, jota käytän palvelimena omille projekteilleni. Tilaa olisi siis tarkoitus käyttää VirtualBoxin sisällä pyörivästä Debianista, joka toimii herrana, erillisellä PC:llä pyörivään Debianiin joka toimii orjana. Molemmat laitteet toimivat samassa lähiverkossa. 
+Tehtävässä tavoitteena oli luoda jokin oma moduuli, jolla olisi jokin oikean maailman käyttötarkoitus. Idean keksiminen oli mielestäni melko hankalaa, sillä kaikki ideat tuntuivat liian simppeleiltä tai typeriltä. Päädyin lopulta luomaan moduulin, jota voidaan käyttää uuden Debian asennuksen käyttöönotossa. Päädyin tähän, sillä olin juuri ottanut käyttöön Debian pohjaisen koneen, jota käytän palvelimena omille projekteilleni. Tilaa olisi siis tarkoitus käyttää VirtualBoxin sisällä pyörivästä Debianista, joka toimii herrana, erillisellä PC:llä pyörivään Debianiin joka toimii orjana. Molemmat laitteet toimivat samassa lähiverkossa. 
 
 Moduulin halusin asentavan LAMP paketin ohjelmia, sillä olen halunnut ylläpitää omia verkkosivuja ja opetella LAMP ohjelmistojen käyttöä. Tein myös moduuliin tilan, joka asentaa LAMP paketin lisäksi itselleni hyödyllisä ohjelmia, kuten OpenSSH-serverin, Treen, Curlin ja Nanon.
 
@@ -55,3 +55,7 @@ Tilan ajamisen jälkeen voidaan testata toimivatko ohjelmat, joita asennettiin o
 ![Screenshot_198](https://user-images.githubusercontent.com/82207948/119122495-3d56d300-ba37-11eb-9b07-90216531913b.png)
 
 ![Screenshot_199](https://user-images.githubusercontent.com/82207948/119123975-d4705a80-ba38-11eb-83ed-bf7fd35f9b2a.png)
+
+Alla linkki moduulin GitHub sivulle.
+
+https://github.com/Aismanne/Salt-module-ICT4TN022-3009
