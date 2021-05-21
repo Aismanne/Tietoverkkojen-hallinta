@@ -59,3 +59,13 @@ Tilan ajamisen jälkeen voidaan testata toimivatko ohjelmat, joita asennettiin o
 Alla linkki moduulin GitHub sivulle.
 
 https://github.com/Aismanne/Salt-module-ICT4TN022-3009
+
+<h1> Lähteet </h1>
+
+https://docs.saltproject.io/en/latest/ref/states/requisites.html#watch
+
+https://terokarvinen.com/2018/salt-states-i-want-my-computers-like-this/
+
+https://www.digitalocean.com/community/tutorials/how-to-harden-openssh-on-ubuntu-18-04
+
+https://www.tecmint.com/apache-security-tips/
