@@ -12,7 +12,7 @@ Tehtävä h4: https://github.com/Aismanne/Tietoverkkojen-hallinta/blob/1main/Uus
 
 Tehtävä h5: https://github.com/Aismanne/Tietoverkkojen-hallinta/blob/1main/Aikajana.md
 
-Tehtävä h6: **Tulossa**
+Tehtävä h6: https://github.com/Aismanne/Tietoverkkojen-hallinta/blob/1main/Windows.md
 
 <h2> Tehtävä B </h2>
 
